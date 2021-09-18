@@ -1,0 +1,22 @@
+QUERY FOR DIRECTOR NAME AND MOVIE
+
+SELECT dir_fname, dir_lname
+FROM  director 
+
+
+
+QUERY FOR  actor first name, last name 
+
+SELECT act_fname,act_lname
+FROM actor 
+
+QUERY FOR ACTRESS first name, last name
+
+SELECT acts_fname,acts_lname
+FROM actress
+
+
+QUERY For movie year
+
+SELECT  mov_year
+FROM  release year
