@@ -13,12 +13,12 @@ public class TestApplication {
       try(Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
          Statement stmt = conn.createStatement();
       ) {		      
-          String sql = "CREATE TABLE MOVIE DETAILS " +
-                   "(id INTEGER not NULL, " +
-                   " first VARCHAR(255), " + 
-                   " last VARCHAR(255), " + 
-                   " age INTEGER, " + 
-                   " PRIMARY KEY ( id ))"; 
+          String sql = CREATE TABLE MOVIES (
+    moviename VARCHAR NOT NULL PRIMARY KEY,
+    director_moviename VARCHAR(100) NOT NULL,
+    actor VARCHAR(100) NULL,
+    actress VARCHAR(100) NULL,
+    movyear INT(10) NOT NULL,; 
 
          stmt.executeUpdate(sql);
          System.out.println("Created table in given database...");   	  
